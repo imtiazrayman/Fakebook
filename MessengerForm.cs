@@ -10,20 +10,14 @@ using System.Windows.Forms;
 
 namespace Fakebook
 {
-    public partial class Form1 : Form
+    public partial class MessengerForm : Form
     {
-        public Form1()
+        public MessengerForm()
         {
             InitializeComponent();
-            menuStrip1.ForeColor = Color.White;
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
 
         }
