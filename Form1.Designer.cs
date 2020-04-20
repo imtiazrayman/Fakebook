@@ -37,12 +37,19 @@
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnGoAmazon = new System.Windows.Forms.Button();
+            this.txtAddressbar = new System.Windows.Forms.TextBox();
+            this.btnSearchGoogle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSearchEbay = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -64,6 +71,7 @@
             this.label2.Size = new System.Drawing.Size(249, 58);
             this.label2.TabIndex = 0;
             this.label2.Text = "fakebook";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel4
             // 
@@ -116,13 +124,51 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.webBrowser1);
+            this.panel1.Controls.Add(this.txtAddressbar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(1, 98);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(862, 494);
             this.panel1.TabIndex = 6;
+            // 
+            // btnGoAmazon
+            // 
+            this.btnGoAmazon.BackColor = System.Drawing.Color.Transparent;
+            this.btnGoAmazon.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnGoAmazon.FlatAppearance.BorderSize = 4;
+            this.btnGoAmazon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoAmazon.ForeColor = System.Drawing.Color.White;
+            this.btnGoAmazon.Location = new System.Drawing.Point(14, 7);
+            this.btnGoAmazon.Name = "btnGoAmazon";
+            this.btnGoAmazon.Size = new System.Drawing.Size(167, 34);
+            this.btnGoAmazon.TabIndex = 3;
+            this.btnGoAmazon.Text = "Search Amazon";
+            this.btnGoAmazon.UseVisualStyleBackColor = false;
+            this.btnGoAmazon.Click += new System.EventHandler(this.btnGoAmazon_Click);
+            // 
+            // txtAddressbar
+            // 
+            this.txtAddressbar.Location = new System.Drawing.Point(278, 31);
+            this.txtAddressbar.Name = "txtAddressbar";
+            this.txtAddressbar.Size = new System.Drawing.Size(293, 22);
+            this.txtAddressbar.TabIndex = 2;
+            // 
+            // btnSearchGoogle
+            // 
+            this.btnSearchGoogle.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSearchGoogle.FlatAppearance.BorderSize = 4;
+            this.btnSearchGoogle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchGoogle.ForeColor = System.Drawing.Color.White;
+            this.btnSearchGoogle.Location = new System.Drawing.Point(629, 7);
+            this.btnSearchGoogle.Name = "btnSearchGoogle";
+            this.btnSearchGoogle.Size = new System.Drawing.Size(178, 34);
+            this.btnSearchGoogle.TabIndex = 1;
+            this.btnSearchGoogle.Text = "Search Google";
+            this.btnSearchGoogle.UseVisualStyleBackColor = true;
+            this.btnSearchGoogle.Click += new System.EventHandler(this.btnSearchGoogle_Click);
             // 
             // label1
             // 
@@ -133,14 +179,52 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // button1
+            // btnSearchEbay
             // 
-            this.button1.Location = new System.Drawing.Point(439, 458);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSearchEbay.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSearchEbay.FlatAppearance.BorderSize = 4;
+            this.btnSearchEbay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchEbay.ForeColor = System.Drawing.Color.White;
+            this.btnSearchEbay.Location = new System.Drawing.Point(221, 7);
+            this.btnSearchEbay.Name = "btnSearchEbay";
+            this.btnSearchEbay.Size = new System.Drawing.Size(164, 34);
+            this.btnSearchEbay.TabIndex = 4;
+            this.btnSearchEbay.Text = "Search Ebay";
+            this.btnSearchEbay.UseVisualStyleBackColor = true;
+            this.btnSearchEbay.Click += new System.EventHandler(this.btnSearchEbay_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 4;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(417, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(173, 34);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Search Google";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(11, 125);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(821, 337);
+            this.webBrowser1.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.panel3.Controls.Add(this.btnGoAmazon);
+            this.panel3.Controls.Add(this.btnSearchGoogle);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.btnSearchEbay);
+            this.panel3.Location = new System.Drawing.Point(11, 69);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(821, 50);
+            this.panel3.TabIndex = 7;
             // 
             // Form1
             // 
@@ -160,6 +244,7 @@
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -174,8 +259,14 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSearchGoogle;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtAddressbar;
+        private System.Windows.Forms.Button btnGoAmazon;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSearchEbay;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
