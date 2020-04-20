@@ -6,4 +6,7 @@ Database Status Report:
 4)Update version 1 released 
 5) Contains 50 preconfigured user profile data
 6) Completely customizable data with over 2000 configurations
-7) Please comment for any additional features
+7)Added instructions for connecting database to visual studio.
+
+8)Please comment for any additional features needed.
+
