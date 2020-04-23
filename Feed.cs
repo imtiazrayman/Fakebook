@@ -16,5 +16,20 @@ namespace Fakebook
         {
             InitializeComponent();
         }
+
+        private void btn_like_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_share_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_comment_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
