@@ -7,6 +7,9 @@ Database Status Report:
 5) Contains 50 preconfigured user profile data
 6) Completely customizable data with over 2000 configurations
 7)Added instructions for connecting database to visual studio.
+8)Fixed bugs caused by Microsoft Cross Platform Database Engine
 
-8)Please comment for any additional features needed.
+
+
+<b>Please comment for any additional features needed.</b>
 

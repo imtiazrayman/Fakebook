@@ -37,14 +37,14 @@
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnGoAmazon = new System.Windows.Forms.Button();
-            this.btnSearchGoogle = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnSearchEbay = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.txtAddressbar = new System.Windows.Forms.TextBox();
+            this.btnSearchGoogle = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSearchEbay = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -108,7 +108,6 @@
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(124, 27);
             this.toolStripMenuItem6.Text = "Messenger";
-            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // toolStripMenuItem7
             // 
@@ -135,18 +134,6 @@
             this.panel1.Size = new System.Drawing.Size(862, 494);
             this.panel1.TabIndex = 6;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
-            this.panel3.Controls.Add(this.btnGoAmazon);
-            this.panel3.Controls.Add(this.btnSearchGoogle);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.btnSearchEbay);
-            this.panel3.Location = new System.Drawing.Point(11, 69);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(821, 50);
-            this.panel3.TabIndex = 7;
-            // 
             // btnGoAmazon
             // 
             this.btnGoAmazon.BackColor = System.Drawing.Color.Transparent;
@@ -162,13 +149,20 @@
             this.btnGoAmazon.UseVisualStyleBackColor = false;
             this.btnGoAmazon.Click += new System.EventHandler(this.btnGoAmazon_Click);
             // 
+            // txtAddressbar
+            // 
+            this.txtAddressbar.Location = new System.Drawing.Point(278, 31);
+            this.txtAddressbar.Name = "txtAddressbar";
+            this.txtAddressbar.Size = new System.Drawing.Size(293, 22);
+            this.txtAddressbar.TabIndex = 2;
+            // 
             // btnSearchGoogle
             // 
             this.btnSearchGoogle.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSearchGoogle.FlatAppearance.BorderSize = 4;
             this.btnSearchGoogle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchGoogle.ForeColor = System.Drawing.Color.White;
-            this.btnSearchGoogle.Location = new System.Drawing.Point(419, 7);
+            this.btnSearchGoogle.Location = new System.Drawing.Point(629, 7);
             this.btnSearchGoogle.Name = "btnSearchGoogle";
             this.btnSearchGoogle.Size = new System.Drawing.Size(178, 34);
             this.btnSearchGoogle.TabIndex = 1;
@@ -176,18 +170,14 @@
             this.btnSearchGoogle.UseVisualStyleBackColor = true;
             this.btnSearchGoogle.Click += new System.EventHandler(this.btnSearchGoogle_Click);
             // 
-            // button2
+            // label1
             // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderSize = 4;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(635, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(173, 34);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Search All";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(397, 628);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 14);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
             // btnSearchEbay
             // 
@@ -203,6 +193,19 @@
             this.btnSearchEbay.UseVisualStyleBackColor = true;
             this.btnSearchEbay.Click += new System.EventHandler(this.btnSearchEbay_Click);
             // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 4;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(417, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(173, 34);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Search Google";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // webBrowser1
             // 
             this.webBrowser1.Location = new System.Drawing.Point(11, 125);
@@ -211,21 +214,17 @@
             this.webBrowser1.Size = new System.Drawing.Size(821, 337);
             this.webBrowser1.TabIndex = 6;
             // 
-            // txtAddressbar
+            // panel3
             // 
-            this.txtAddressbar.Location = new System.Drawing.Point(278, 31);
-            this.txtAddressbar.Name = "txtAddressbar";
-            this.txtAddressbar.Size = new System.Drawing.Size(293, 22);
-            this.txtAddressbar.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(397, 628);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 14);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.panel3.Controls.Add(this.btnGoAmazon);
+            this.panel3.Controls.Add(this.btnSearchGoogle);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.btnSearchEbay);
+            this.panel3.Location = new System.Drawing.Point(11, 69);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(821, 50);
+            this.panel3.TabIndex = 7;
             // 
             // Form1
             // 
