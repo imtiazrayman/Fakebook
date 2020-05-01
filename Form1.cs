@@ -114,6 +114,18 @@ namespace Fakebook
             fr.Show();
             //  fr.ShowDialog(); // this keeps the child in forcus
         }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            Feed feed = new Feed();
+            feed.Show();
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            profile profilepage = new profile();
+            profilepage.Show();
+        }
     }
 }
    
