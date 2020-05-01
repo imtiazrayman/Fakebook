@@ -78,6 +78,12 @@
     <Compile Include="Friends%28Profiles%29.Designer.cs">
       <DependentUpon>Friends%28Profiles%29.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MessengerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Friends%28Profiles%29.resx">
       <DependentUpon>Friends%28Profiles%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MessengerForm.resx">
       <DependentUpon>MessengerForm.cs</DependentUpon>
