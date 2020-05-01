@@ -6,10 +6,13 @@ namespace Fakebook
 {
     public partial class Form1: Form
     {
+        public double amazonprice, ebayprice, googleprice, averageprice; 
+
         public Form1()
         {
             InitializeComponent();
             menuStrip1.ForeColor = Color.White;
+            richTextBox1.Text = "Item\tAmazon\tEbay\tGoogle\tTime";
         }
 
         private void btnGoAmazon_Click(object sender, EventArgs e)
@@ -110,6 +113,67 @@ namespace Fakebook
         {
             MessengerForm fr = new MessengerForm();
             fr.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnComparison_Click(object sender, EventArgs e)
+        {
+
+            priceChecker();
+            DateTime now = DateTime.Now;
+            richTextBox1.AppendText("\n"+ txtAddressbar.Text + "\t" + amazonprice.ToString() +"\t" + ebayprice.ToString() + "\t" + googleprice.ToString() + "\t" + now.ToString());
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void priceChecker()
+        {
+            if (txtAmazon.Text.ToString() == "")
+            {
+                amazonprice = 0.0;
+            }
+            else
+            {
+                amazonprice = Convert.ToDouble(txtAmazon.Text);
+            }
+
+            if (txtEbay.Text.ToString() == "")
+            {
+                ebayprice = 0.0;
+            }
+            else
+            {
+                ebayprice = Convert.ToDouble(txtEbay.Text);
+            }
+
+            if (txtGoogle.Text.ToString() == "")
+            {
+                googleprice = 0.0;
+            }
+            else
+            {
+                googleprice = Convert.ToDouble(txtAmazon.Text);
+            }
+            if(txtAddressbar.Text == "")
+            {
+
+            }
         }
     }
 }
