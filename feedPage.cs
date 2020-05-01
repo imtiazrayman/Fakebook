@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Fakebook
 {
-    public partial class profile : Form
+    public partial class feedPage : Form
     {
-        public profile()
+        public feedPage()
         {
             InitializeComponent();
         }
@@ -29,8 +29,19 @@ namespace Fakebook
 
         private void toolStripMenuItem8_Click(object sender, EventArgs e)
         {
-            profile profilepage = new profile();
+            feedPage profilepage = new feedPage();
             profilepage.Show();
+        }
+
+        private void profile_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Form1 home = new Form1();
+            home.Show();
         }
     }
 }

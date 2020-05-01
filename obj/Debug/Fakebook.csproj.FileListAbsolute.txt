@@ -1,0 +1,13 @@
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.csprojAssemblyReference.cache
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.Form1.resources
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.MessengerForm.resources
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.Properties.Resources.resources
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.csproj.GenerateResource.cache
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\bin\Debug\Fakebook.exe.config
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\bin\Debug\Fakebook.exe
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\bin\Debug\Fakebook.pdb
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.exe
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.pdb
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.Form2.resources
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\bin\Debug\FakeBookV3.accdb
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.feedPage.resources

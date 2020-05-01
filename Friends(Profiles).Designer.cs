@@ -1,6 +1,6 @@
 ﻿namespace Fakebook
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -103,28 +103,32 @@
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(78, 27);
             this.toolStripMenuItem5.Text = "Home";
-            this.toolStripMenuItem5.Click += new System.EventHandler(this.ToolStripMenuItem5_Click);
+            //this.toolStripMenuItem5.Click += new System.EventHandler(this.ToolStripMenuItem5_Click);
+            
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(124, 27);
             this.toolStripMenuItem6.Text = "Messenger";
-            this.toolStripMenuItem6.Click += new System.EventHandler(this.ToolStripMenuItem6_Click);
+           // this.toolStripMenuItem6.Click += new System.EventHandler(this.ToolStripMenuItem6_Click);
+           
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
             this.toolStripMenuItem7.Size = new System.Drawing.Size(67, 27);
             this.toolStripMenuItem7.Text = "Feed";
-            this.toolStripMenuItem7.Click += new System.EventHandler(this.ToolStripMenuItem7_Click);
+           // this.toolStripMenuItem7.Click += new System.EventHandler(this.ToolStripMenuItem7_Click);
+            
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
             this.toolStripMenuItem8.Size = new System.Drawing.Size(182, 27);
             this.toolStripMenuItem8.Text = "Friends(Profiles)";
-            this.toolStripMenuItem8.Click += new System.EventHandler(this.ToolStripMenuItem8_Click);
+            //this.toolStripMenuItem8.Click += new System.EventHandler(this.ToolStripMenuItem8_Click);
+           
             // 
             // panel1
             // 
@@ -142,7 +146,8 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(862, 499);
             this.panel1.TabIndex = 6;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+           // this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+           
             // 
             // label3
             // 
@@ -168,7 +173,8 @@
             this.lvFriends.TabIndex = 2;
             this.lvFriends.UseCompatibleStateImageBehavior = false;
             this.lvFriends.View = System.Windows.Forms.View.Details;
-            this.lvFriends.SelectedIndexChanged += new System.EventHandler(this.LvFriends_SelectedIndexChanged);
+            //this.lvFriends.SelectedIndexChanged += new System.EventHandler(this.LvFriends_SelectedIndexChanged);
+           
             // 
             // findButton
             // 
@@ -181,6 +187,7 @@
             this.findButton.Text = "Friends";
             this.findButton.UseVisualStyleBackColor = false;
             this.findButton.Click += new System.EventHandler(this.FindButton_Click);
+           
             // 
             // pictureBox1
             // 
@@ -220,7 +227,8 @@
             this.label4.Size = new System.Drawing.Size(133, 14);
             this.label4.TabIndex = 7;
             this.label4.Text = "Connected-To-Cloud";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
+           // this.label4.Click += new System.EventHandler(this.Label4_Click);
+            
             // 
             // Form1
             // 

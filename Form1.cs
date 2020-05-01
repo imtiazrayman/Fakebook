@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Fakebook
@@ -18,24 +12,9 @@ namespace Fakebook
             menuStrip1.ForeColor = Color.White;
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGoAmazon_Click(object sender, EventArgs e)
         {
-           // https://www.amazon.com/s?k=iphonef&ref=nb_sb_noss_2
+            // https://www.amazon.com/s?k=iphonef&ref=nb_sb_noss_2
 
             if (txtAddressbar.Text.ToString().Contains("http://www."))
             {
@@ -50,7 +29,7 @@ namespace Fakebook
             {
                 string searchQuery = txtAddressbar.Text.ToString();
                 string appendedSearchQuery = "http://www.amazon.com/s?k=" + searchQuery;
-                
+
                 webBrowser1.Navigate(new Uri(appendedSearchQuery));
                 webBrowser1.ScriptErrorsSuppressed = true; // this is here because the windows form web browser cant cut the java script times.
 
@@ -88,7 +67,7 @@ namespace Fakebook
 
         private void btnSearchEbay_Click(object sender, EventArgs e)
         {
-            if (txtAddressbar.Text.ToString().Contains("http://www.")) 
+            if (txtAddressbar.Text.ToString().Contains("http://www."))
             {
                 webBrowser1.Navigate(new Uri(txtAddressbar.Text));
             }
@@ -111,21 +90,26 @@ namespace Fakebook
         private void toolStripMenuItem6_Click(object sender, EventArgs e)
         {
             MessengerForm fr = new MessengerForm();
-            fr.Show();
+            fr.ShowDialog();
             //  fr.ShowDialog(); // this keeps the child in forcus
         }
 
         private void toolStripMenuItem7_Click(object sender, EventArgs e)
         {
-            Feed feed = new Feed();
+            feedPage feed = new feedPage();
             feed.Show();
         }
 
         private void toolStripMenuItem8_Click(object sender, EventArgs e)
         {
-            profile profilepage = new profile();
+            Form2 profilepage = new Form2();
             profilepage.Show();
+        }
+
+        private void toolStripMenuItem6_Click_1(object sender, EventArgs e)
+        {
+            MessengerForm fr = new MessengerForm();
+            fr.ShowDialog();
         }
     }
 }
-   
