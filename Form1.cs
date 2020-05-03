@@ -1,57 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Fakebook
 {
-    public partial class Feed : Form
+    public partial class Form1: Form
     {
-        public Feed()
+        public double amazonprice, ebayprice, googleprice, averageprice; 
+
+        public Form1()
         {
             InitializeComponent();
-
-        }
-
-        private void btn_like_Click(object sender, EventArgs e)
-
             menuStrip1.ForeColor = Color.White;
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-
-        {
-
-        }
-
-
-        private void btn_share_Click(object sender, EventArgs e)
-
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
-
-        {
-
-        }
-
-
-        private void btn_comment_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
+            richTextBox1.Text = "Item\tAmazon\tEbay\tGoogle\tTime";
         }
 
         private void btnGoAmazon_Click(object sender, EventArgs e)
         {
-           // https://www.amazon.com/s?k=iphonef&ref=nb_sb_noss_2
+            // https://www.amazon.com/s?k=iphonef&ref=nb_sb_noss_2
 
             if (txtAddressbar.Text.ToString().Contains("http://www."))
             {
@@ -66,7 +32,7 @@ namespace Fakebook
             {
                 string searchQuery = txtAddressbar.Text.ToString();
                 string appendedSearchQuery = "http://www.amazon.com/s?k=" + searchQuery;
-                
+
                 webBrowser1.Navigate(new Uri(appendedSearchQuery));
                 webBrowser1.ScriptErrorsSuppressed = true; // this is here because the windows form web browser cant cut the java script times.
 
@@ -104,7 +70,7 @@ namespace Fakebook
 
         private void btnSearchEbay_Click(object sender, EventArgs e)
         {
-            if (txtAddressbar.Text.ToString().Contains("http://www.")) 
+            if (txtAddressbar.Text.ToString().Contains("http://www."))
             {
                 webBrowser1.Navigate(new Uri(txtAddressbar.Text));
             }
@@ -124,5 +90,90 @@ namespace Fakebook
             }
         }
 
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            MessengerForm fr = new MessengerForm();
+            fr.ShowDialog();
+            //  fr.ShowDialog(); // this keeps the child in forcus
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            feedPage feed = new feedPage();
+            feed.Show();
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            Form2 profilepage = new Form2();
+            profilepage.Show();
+        }
+
+        private void toolStripMenuItem6_Click_1(object sender, EventArgs e)
+        {
+            MessengerForm fr = new MessengerForm();
+            fr.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnComparison_Click(object sender, EventArgs e)
+        {
+
+            priceChecker();
+            DateTime now = DateTime.Now;
+            richTextBox1.AppendText("\n"+ txtAddressbar.Text + "\t" + amazonprice.ToString() +"\t" + ebayprice.ToString() + "\t" + googleprice.ToString() + "\t" + now.ToString());
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void priceChecker()
+        {
+            if (txtAmazon.Text.ToString() == "")
+            {
+                amazonprice = 0.0;
+            }
+            else
+            {
+                amazonprice = Convert.ToDouble(txtAmazon.Text);
+            }
+
+            if (txtEbay.Text.ToString() == "")
+            {
+                ebayprice = 0.0;
+            }
+            else
+            {
+                ebayprice = Convert.ToDouble(txtEbay.Text);
+            }
+
+            if (txtGoogle.Text.ToString() == "")
+            {
+                googleprice = 0.0;
+            }
+            else
+            {
+                googleprice = Convert.ToDouble(txtAmazon.Text);
+            }
+            if(txtAddressbar.Text == "")
+            {
+
+            }
+        }
     }
 }

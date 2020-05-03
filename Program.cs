@@ -16,7 +16,7 @@ namespace Fakebook
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Login()); // if we want to make the set up page we just change this here
         }
     }
 }
