@@ -32,33 +32,11 @@ namespace Fakebook
         private void FindButton_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            /*
-             * Test Code
-             * 
-             * using (FakeBookV2DataSetTableAdapters.UserProfilesTableAdapter profilesTableAdapter = new FakeBookV2DataSetTableAdapters.UserProfilesTableAdapter())
-            {
-                FakeBookV2DataSet db = new FakeBookV2DataSet();              
-                profilesTableAdapter.Fill(db.UserProfiles);
-                List<> list = db.UserProfiles.ToList();
-                foreach(use)
-
-            }
-            */
+       
 
 
             {
-                /*Test Code
-                 * 
-                 * public int getCount() {
-                    if (mList != null) {
-                        return
-                             Math.min(mList.size()), YOU_MAX_VALUE);
-                                       } else
-                                              {
-                                          return 0;
-                                                         }
-                                                }
-                                                */
+              
                 using (FakeBookV3DataSetTableAdapters.UserProfilesTableAdapter profilesTableAdapter = new FakeBookV3DataSetTableAdapters.UserProfilesTableAdapter())
                 {
                     FakeBookV3DataSet fakebookDB = new FakeBookV3DataSet();
