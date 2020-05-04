@@ -38,8 +38,8 @@
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rtxt_response = new System.Windows.Forms.RichTextBox();
+            this.txt_userInput = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
@@ -73,8 +73,8 @@
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.richTextBox1);
+            this.panel1.Controls.Add(this.txt_userInput);
+            this.panel1.Controls.Add(this.rtxt_response);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(-1, 97);
@@ -139,20 +139,20 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(94, 27);
             this.toolStripMenuItem8.Text = "Profiles";
             // 
-            // richTextBox1
+            // rtxt_response
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(22, 135);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(801, 385);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.rtxt_response.Location = new System.Drawing.Point(22, 112);
+            this.rtxt_response.Name = "rtxt_response";
+            this.rtxt_response.Size = new System.Drawing.Size(801, 408);
+            this.rtxt_response.TabIndex = 1;
+            this.rtxt_response.Text = "";
             // 
-            // textBox1
+            // txt_userInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(792, 22);
-            this.textBox1.TabIndex = 2;
+            this.txt_userInput.Location = new System.Drawing.Point(22, 34);
+            this.txt_userInput.Name = "txt_userInput";
+            this.txt_userInput.Size = new System.Drawing.Size(792, 22);
+            this.txt_userInput.TabIndex = 2;
             // 
             // button1
             // 
@@ -162,6 +162,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Send";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -208,7 +209,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox txt_userInput;
+        private System.Windows.Forms.RichTextBox rtxt_response;
     }
 }
