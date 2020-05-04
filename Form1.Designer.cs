@@ -37,22 +37,22 @@
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnComparison = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtGoogle = new System.Windows.Forms.TextBox();
+            this.txtEbay = new System.Windows.Forms.TextBox();
+            this.txtAmazon = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnGoAmazon = new System.Windows.Forms.Button();
-            this.btnSearchGoogle = new System.Windows.Forms.Button();
             this.btnSearchEbay = new System.Windows.Forms.Button();
+            this.btnSearchGoogle = new System.Windows.Forms.Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.txtAddressbar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtAmazon = new System.Windows.Forms.TextBox();
-            this.txtEbay = new System.Windows.Forms.TextBox();
-            this.txtGoogle = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.btnComparison = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -110,6 +110,7 @@
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(78, 27);
             this.toolStripMenuItem5.Text = "Home";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem6
             // 
@@ -155,6 +156,88 @@
             this.panel1.TabIndex = 6;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(22, 475);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 14);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Amazon Prices";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(179, 475);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 14);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Ebay Prices";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(339, 475);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 14);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Google Prices";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(279, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(198, 14);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Enter in an Item to search for :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // btnComparison
+            // 
+            this.btnComparison.BackColor = System.Drawing.Color.Turquoise;
+            this.btnComparison.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnComparison.FlatAppearance.BorderSize = 4;
+            this.btnComparison.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnComparison.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnComparison.Location = new System.Drawing.Point(515, 475);
+            this.btnComparison.Name = "btnComparison";
+            this.btnComparison.Size = new System.Drawing.Size(173, 34);
+            this.btnComparison.TabIndex = 13;
+            this.btnComparison.Text = "Compare";
+            this.btnComparison.UseVisualStyleBackColor = false;
+            this.btnComparison.Click += new System.EventHandler(this.btnComparison_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(25, 520);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(806, 372);
+            this.richTextBox1.TabIndex = 12;
+            this.richTextBox1.Text = "";
+            // 
+            // txtGoogle
+            // 
+            this.txtGoogle.Location = new System.Drawing.Point(342, 492);
+            this.txtGoogle.Name = "txtGoogle";
+            this.txtGoogle.Size = new System.Drawing.Size(100, 22);
+            this.txtGoogle.TabIndex = 10;
+            // 
+            // txtEbay
+            // 
+            this.txtEbay.Location = new System.Drawing.Point(182, 492);
+            this.txtEbay.Name = "txtEbay";
+            this.txtEbay.Size = new System.Drawing.Size(100, 22);
+            this.txtEbay.TabIndex = 9;
+            // 
+            // txtAmazon
+            // 
+            this.txtAmazon.Location = new System.Drawing.Point(25, 492);
+            this.txtAmazon.Name = "txtAmazon";
+            this.txtAmazon.Size = new System.Drawing.Size(100, 22);
+            this.txtAmazon.TabIndex = 8;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
@@ -181,20 +264,6 @@
             this.btnGoAmazon.UseVisualStyleBackColor = false;
             this.btnGoAmazon.Click += new System.EventHandler(this.btnGoAmazon_Click);
             // 
-            // btnSearchGoogle
-            // 
-            this.btnSearchGoogle.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSearchGoogle.FlatAppearance.BorderSize = 4;
-            this.btnSearchGoogle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchGoogle.ForeColor = System.Drawing.Color.White;
-            this.btnSearchGoogle.Location = new System.Drawing.Point(613, 7);
-            this.btnSearchGoogle.Name = "btnSearchGoogle";
-            this.btnSearchGoogle.Size = new System.Drawing.Size(178, 34);
-            this.btnSearchGoogle.TabIndex = 1;
-            this.btnSearchGoogle.Text = "Search Google";
-            this.btnSearchGoogle.UseVisualStyleBackColor = true;
-            this.btnSearchGoogle.Click += new System.EventHandler(this.btnSearchGoogle_Click);
-            // 
             // btnSearchEbay
             // 
             this.btnSearchEbay.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -208,6 +277,20 @@
             this.btnSearchEbay.Text = "Search Ebay";
             this.btnSearchEbay.UseVisualStyleBackColor = true;
             this.btnSearchEbay.Click += new System.EventHandler(this.btnSearchEbay_Click);
+            // 
+            // btnSearchGoogle
+            // 
+            this.btnSearchGoogle.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSearchGoogle.FlatAppearance.BorderSize = 4;
+            this.btnSearchGoogle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchGoogle.ForeColor = System.Drawing.Color.White;
+            this.btnSearchGoogle.Location = new System.Drawing.Point(613, 7);
+            this.btnSearchGoogle.Name = "btnSearchGoogle";
+            this.btnSearchGoogle.Size = new System.Drawing.Size(178, 34);
+            this.btnSearchGoogle.TabIndex = 1;
+            this.btnSearchGoogle.Text = "Search Google";
+            this.btnSearchGoogle.UseVisualStyleBackColor = true;
+            this.btnSearchGoogle.Click += new System.EventHandler(this.btnSearchGoogle_Click);
             // 
             // webBrowser1
             // 
@@ -233,88 +316,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Enter in the best prices of each Site";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtAmazon
-            // 
-            this.txtAmazon.Location = new System.Drawing.Point(25, 492);
-            this.txtAmazon.Name = "txtAmazon";
-            this.txtAmazon.Size = new System.Drawing.Size(100, 22);
-            this.txtAmazon.TabIndex = 8;
-            // 
-            // txtEbay
-            // 
-            this.txtEbay.Location = new System.Drawing.Point(182, 492);
-            this.txtEbay.Name = "txtEbay";
-            this.txtEbay.Size = new System.Drawing.Size(100, 22);
-            this.txtEbay.TabIndex = 9;
-            // 
-            // txtGoogle
-            // 
-            this.txtGoogle.Location = new System.Drawing.Point(342, 492);
-            this.txtGoogle.Name = "txtGoogle";
-            this.txtGoogle.Size = new System.Drawing.Size(100, 22);
-            this.txtGoogle.TabIndex = 10;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(25, 520);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(806, 372);
-            this.richTextBox1.TabIndex = 12;
-            this.richTextBox1.Text = "";
-            // 
-            // btnComparison
-            // 
-            this.btnComparison.BackColor = System.Drawing.Color.Turquoise;
-            this.btnComparison.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnComparison.FlatAppearance.BorderSize = 4;
-            this.btnComparison.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComparison.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnComparison.Location = new System.Drawing.Point(515, 475);
-            this.btnComparison.Name = "btnComparison";
-            this.btnComparison.Size = new System.Drawing.Size(173, 34);
-            this.btnComparison.TabIndex = 13;
-            this.btnComparison.Text = "Compare";
-            this.btnComparison.UseVisualStyleBackColor = false;
-            this.btnComparison.Click += new System.EventHandler(this.btnComparison_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(279, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(198, 14);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Enter in an Item to search for :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(339, 475);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 14);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Google Prices";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(179, 475);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 14);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Ebay Prices";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 475);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 14);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Amazon Prices";
             // 
             // Form1
             // 

@@ -29,7 +29,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -105,30 +104,27 @@
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(78, 27);
             this.toolStripMenuItem5.Text = "Home";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(124, 27);
             this.toolStripMenuItem6.Text = "Messenger";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
             this.toolStripMenuItem7.Size = new System.Drawing.Size(67, 27);
             this.toolStripMenuItem7.Text = "Feed";
-
-            //this.toolStripMenuItem7.Click += new System.EventHandler(this.ToolStripMenuItem7_Click_1);
-
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
             this.toolStripMenuItem8.Size = new System.Drawing.Size(182, 27);
             this.toolStripMenuItem8.Text = "Friends(Profiles)";
-
-           // this.toolStripMenuItem8.Click += new System.EventHandler(this.ToolStripMenuItem8_Click_1);
-
             // 
             // panel1
             // 
@@ -146,9 +142,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(862, 499);
             this.panel1.TabIndex = 6;
-
-            
-
             // 
             // label4
             // 

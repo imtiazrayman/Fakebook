@@ -12,3 +12,4 @@ C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.Fo
 C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\bin\Debug\FakeBookV3.accdb
 C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.feedPage.resources
 C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.Login.resources
+C:\Users\Imtiaz Windows\source\repos\imtiazrayman\Fakebook\obj\Debug\Fakebook.SignupForm.resources

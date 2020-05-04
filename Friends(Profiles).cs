@@ -120,8 +120,27 @@ namespace Fakebook
               // Cursor.Current = Cursors.Default; 
                 
 
-            } 
+            }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            feedPage feed = new feedPage();
+            feed.Show();
+            this.Close();
         }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Form1 homemarketplace = new Form1();
+            homemarketplace.ShowDialog();
+            this.Close();
+        }
+    }
 
        /* private void ToolStripMenuItem5_Click(object sender, EventArgs e)
 
