@@ -53,6 +53,8 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.txtAddressbar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnSaveLog = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -136,6 +138,8 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.btnSaveLog);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -200,7 +204,7 @@
             this.btnComparison.FlatAppearance.BorderSize = 4;
             this.btnComparison.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComparison.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnComparison.Location = new System.Drawing.Point(515, 475);
+            this.btnComparison.Location = new System.Drawing.Point(448, 485);
             this.btnComparison.Name = "btnComparison";
             this.btnComparison.Size = new System.Drawing.Size(173, 34);
             this.btnComparison.TabIndex = 13;
@@ -317,6 +321,26 @@
             this.label1.Text = "Enter in the best prices of each Site";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(637, 452);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(181, 29);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Retrieve Previous Log";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnSaveLog
+            // 
+            this.btnSaveLog.Location = new System.Drawing.Point(637, 486);
+            this.btnSaveLog.Name = "btnSaveLog";
+            this.btnSaveLog.Size = new System.Drawing.Size(181, 32);
+            this.btnSaveLog.TabIndex = 19;
+            this.btnSaveLog.Text = "Save Log";
+            this.btnSaveLog.UseVisualStyleBackColor = true;
+            this.btnSaveLog.Click += new System.EventHandler(this.btnSaveLog_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,6 +390,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSaveLog;
     }
 }
 
