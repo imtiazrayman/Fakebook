@@ -118,7 +118,7 @@
             this.toolStripMenuItem7.Size = new System.Drawing.Size(67, 27);
             this.toolStripMenuItem7.Text = "Feed";
 
-            this.toolStripMenuItem7.Click += new System.EventHandler(this.ToolStripMenuItem7_Click_1);
+            //this.toolStripMenuItem7.Click += new System.EventHandler(this.ToolStripMenuItem7_Click_1);
 
             // 
             // toolStripMenuItem8
@@ -127,7 +127,7 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(182, 27);
             this.toolStripMenuItem8.Text = "Friends(Profiles)";
 
-            this.toolStripMenuItem8.Click += new System.EventHandler(this.ToolStripMenuItem8_Click_1);
+           // this.toolStripMenuItem8.Click += new System.EventHandler(this.ToolStripMenuItem8_Click_1);
 
             // 
             // panel1

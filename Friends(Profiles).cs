@@ -123,7 +123,7 @@ namespace Fakebook
             } 
         }
 
-        private void ToolStripMenuItem5_Click(object sender, EventArgs e)
+       /* private void ToolStripMenuItem5_Click(object sender, EventArgs e)
 
         {
             Form1 homemarketplace = new Form1();
@@ -152,7 +152,7 @@ private void ToolStripMenuItem6_Click(object sender, EventArgs e)
         {
             feedPage feed = new feedPage();
             feed.Show();
-        }
+        }*/
 
     }
 
