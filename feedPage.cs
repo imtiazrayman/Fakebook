@@ -15,6 +15,8 @@ namespace Fakebook
         public feedPage()
         {
             InitializeComponent();
+            webBrowser1.Navigate(new Uri("https://www.cnn.com/"));
+            webBrowser1.ScriptErrorsSuppressed = true; // this is here because the windows form web browser cant cut the java script times.
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -42,6 +44,11 @@ namespace Fakebook
         {
             Form1 home = new Form1();
             home.Show();
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+  
         }
     }
 }
