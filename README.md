@@ -4,7 +4,8 @@ A facebook clone made with C#
 
 
 This is a clone which will created to model a present day facebook page, it will utilize a database and have different aspects of the user Experience.
-#User Interface
+
+# User Interface
 ![Annotation 2020-05-03 215742](https://user-images.githubusercontent.com/61753398/80933923-c1d6a500-8d93-11ea-818c-fb0f6a7a1816.png)
 ![Annotation 2020-05-03 215802](https://user-images.githubusercontent.com/61753398/80933924-c1d6a500-8d93-11ea-97f0-34b6efea9a43.png)
 ![Annotation 2020-05-03 220148](https://user-images.githubusercontent.com/61753398/80933925-c1d6a500-8d93-11ea-903b-d8168ba7afeb.png)
