@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Fakebook
 {
@@ -85,6 +86,58 @@ namespace Fakebook
             {
                 rtxt_response.AppendText(txt_userInput.Text + "\n\t\t\t" + response[10] + "\t" + now.ToString() + "\n");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string fileName = Microsoft.VisualBasic.Interaction.InputBox("Please enter filename :", "File Name", "", 60, 90);
+            label1.Text = label1.Text + fileName;
+
+            if (fileName.Equals(""))
+            {
+
+            }
+            StreamReader myFile;
+
+            try
+            {
+                myFile = File.OpenText(fileName);
+                string line = "";
+                do
+                {
+                    line = myFile.ReadLine();
+                    if (line != null)
+                    {
+                        rtxt_response.AppendText(Environment.NewLine + line);
+                    }
+                } while (line != null);
+            }
+            catch (IOException)
+            {
+                MessageBox.Show("File Not Found", "File Location Error",
+               MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void btnSaveConvo_Click(object sender, EventArgs e)
+        {
+            StreamWriter myFile;
+            string fileName = Microsoft.VisualBasic.Interaction.InputBox("Please Name Your File:", "Enter File Name", "", 60, 90);
+            myFile = File.CreateText(fileName);
+            try
+            {
+                for (int i = 0; i < rtxt_response.Lines.Length; i++)
+                {
+                    myFile.WriteLine(rtxt_response.Lines[i]);
+                }
+            }
+            catch (IOException)
+            {
+                MessageBox.Show("Error Writing to File", "File Write Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            myFile.Close();
+            MessageBox.Show("File Creation " + fileName + " was successful!", "File Creation Success", MessageBoxButtons.OK,
+           MessageBoxIcon.Information);
         }
     }
 }

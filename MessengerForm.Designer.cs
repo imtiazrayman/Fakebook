@@ -31,6 +31,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txt_userInput = new System.Windows.Forms.TextBox();
+            this.rtxt_response = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -38,10 +42,7 @@
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.rtxt_response = new System.Windows.Forms.RichTextBox();
-            this.txt_userInput = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSaveConvo = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -71,6 +72,7 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.btnSaveConvo);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.txt_userInput);
@@ -81,6 +83,41 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(862, 532);
             this.panel1.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(22, 11);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(370, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Previously Saved Conversation";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(22, 83);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(792, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Send";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txt_userInput
+            // 
+            this.txt_userInput.Location = new System.Drawing.Point(22, 55);
+            this.txt_userInput.Name = "txt_userInput";
+            this.txt_userInput.Size = new System.Drawing.Size(792, 22);
+            this.txt_userInput.TabIndex = 2;
+            // 
+            // rtxt_response
+            // 
+            this.rtxt_response.Location = new System.Drawing.Point(22, 112);
+            this.rtxt_response.Name = "rtxt_response";
+            this.rtxt_response.Size = new System.Drawing.Size(801, 408);
+            this.rtxt_response.TabIndex = 1;
+            this.rtxt_response.Text = "";
             // 
             // label1
             // 
@@ -139,39 +176,15 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(94, 27);
             this.toolStripMenuItem8.Text = "Profiles";
             // 
-            // rtxt_response
+            // btnSaveConvo
             // 
-            this.rtxt_response.Location = new System.Drawing.Point(22, 112);
-            this.rtxt_response.Name = "rtxt_response";
-            this.rtxt_response.Size = new System.Drawing.Size(801, 408);
-            this.rtxt_response.TabIndex = 1;
-            this.rtxt_response.Text = "";
-            // 
-            // txt_userInput
-            // 
-            this.txt_userInput.Location = new System.Drawing.Point(22, 34);
-            this.txt_userInput.Name = "txt_userInput";
-            this.txt_userInput.Size = new System.Drawing.Size(792, 22);
-            this.txt_userInput.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(22, 83);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(416, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Send";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(444, 83);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(370, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Save Conversation";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSaveConvo.Location = new System.Drawing.Point(398, 11);
+            this.btnSaveConvo.Name = "btnSaveConvo";
+            this.btnSaveConvo.Size = new System.Drawing.Size(416, 23);
+            this.btnSaveConvo.TabIndex = 5;
+            this.btnSaveConvo.Text = "Save this Conversation";
+            this.btnSaveConvo.UseVisualStyleBackColor = true;
+            this.btnSaveConvo.Click += new System.EventHandler(this.btnSaveConvo_Click);
             // 
             // MessengerForm
             // 
@@ -211,5 +224,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txt_userInput;
         private System.Windows.Forms.RichTextBox rtxt_response;
+        private System.Windows.Forms.Button btnSaveConvo;
     }
 }
