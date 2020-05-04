@@ -21,7 +21,6 @@ namespace Fakebook
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
-          
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -138,6 +137,24 @@ namespace Fakebook
             myFile.Close();
             MessageBox.Show("File Creation " + fileName + " was successful!", "File Creation Success", MessageBoxButtons.OK,
            MessageBoxIcon.Information);
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Form1 marketplace = new Form1();
+            marketplace.Show();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            feedPage feed = new feedPage();
+            feed.Show();
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            Form2 profiles = new Form2();
+            profiles.Show();
         }
     }
 }
