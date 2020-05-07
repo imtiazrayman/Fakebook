@@ -19,5 +19,7 @@ This is a clone which will created to model a present day facebook page, it will
 ![Annotation 2020-05-03 215608](https://user-images.githubusercontent.com/61753398/80933940-c9964980-8d93-11ea-9d01-007d0ec41c81.png)
 ![Annotation 2020-05-03 215658](https://user-images.githubusercontent.com/61753398/80933941-c9964980-8d93-11ea-9c76-baa425a8e386.png)
 
+# Flow Charts
+![Screen Shot 2020-05-07 at 2 25 37 AM](https://user-images.githubusercontent.com/61753398/81261427-15eabf00-900a-11ea-9ea8-d117114be41d.png)
 ![Design-Flow-Chart](https://user-images.githubusercontent.com/61753398/79386508-3f975580-7f38-11ea-8ade-c9b5d34ec1b2.png)
 
